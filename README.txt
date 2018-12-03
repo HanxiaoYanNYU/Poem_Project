@@ -1,0 +1,1 @@
+This python project works on Poems. We get poem name, author name and poem content from a txt file and deal with the content.
