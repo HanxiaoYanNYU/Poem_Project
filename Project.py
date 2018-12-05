@@ -24,6 +24,7 @@ class Poems(object):
         self.author = ''
         self.text = ''
         self.numberLines = 0
+        self.score = None
         self.poemId = Poems.ID
         Poems.ID += 1
 

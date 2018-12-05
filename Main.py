@@ -14,7 +14,3 @@ class Main:
 m = Main()
 poem_collection = PoemHelper.create_poems(m.file)
 
-decision, score = ScoreHelper.estimate_sentiment(poem_collection[8].text, False)
-print("the decision is : " + decision)
-print(score)
-
