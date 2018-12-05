@@ -59,8 +59,15 @@ class PoemHelper:
         sorted_poems = sorted(poem_collection, key=lambda x: x.score, reverse=False)
         return sorted_poems
 
-    def create_word_dict(self, poems):
-        pass
+    @staticmethod
+    def create_words(poem_collection, stopword, contraction):
+        for poem in poem_collection:
+            word_list = poem.text.split()
+            for word in word_list:
+                if word in stopword or word in contraction:
+                    continue
+                else:
+                    peom.words[word] = poem.words.get(word, 0) + 1
 
     @staticmethod
     def check_string(string, word_dict):
@@ -97,6 +104,10 @@ class PoemHelper:
         wordtrain(word, limit)
 
     def findNext(self, letter):
+
+        #check 1st letter
+
+        #also check last letter
         pass
 
 
